@@ -1,0 +1,15 @@
+{
+  "name": "biblioteca-fullstack",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "concurrently -n BACKEND,FRONTEND -c yellow,cyan \"npm run dev --prefix backend\" \"npm run dev --prefix frontend\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jocieleciele/biblioteca-fullstack.git"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
