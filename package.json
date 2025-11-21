@@ -1,13 +1,11 @@
 {
-  "name": "biblioteca-fullstack",
+  "name": "biblioteca_fullstack_integrado",
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "concurrently -n BACKEND,FRONTEND -c yellow,cyan \"npm run dev --prefix backend\" \"npm run dev --prefix frontend\""
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jocieleciele/biblioteca-fullstack.git"
+    "start": "concurrently -n BACKEND,FRONTEND -c yellow,cyan \"npm run dev --prefix backend\" \"npm run dev --prefix frontend\"",
+    "backend": "npm run dev --prefix backend",
+    "frontend": "npm run dev --prefix frontend"
   },
   "devDependencies": {
     "concurrently": "^8.2.0"
